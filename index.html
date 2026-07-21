@@ -1,0 +1,36 @@
+<div id="game-container">
+  <div id="ui-bar">
+    <div id="status">STATUS: <span id="status-text">SNEAKING</span></div>
+    <div id="inventory">INVENTORY: <span id="inv-text">Empty</span></div>
+    <button id="pause-btn" onclick="togglePause()">⏸️ PAUSE</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+  <!-- Overlay Menu -->
+  <div id="overlay">
+    <h1 id="overlay-title">🏃 SCHOOLBOY RUNAWAY</h1>
+    <p id="overlay-msg">Sneak past your parents! Collect the **House Key** and **Front Door Key** to escape.</p>
+    <div id="controls-hint">
+      <strong>Desktop:</strong> WASD/Arrows to Move • [E] Interact/Hide • [Space] Noise Distraction<br>
+      <strong>Mobile:</strong> D-Pad to Move • [HIDE] Button inside Hideouts • [NOISE] Button to lure parents
+    </div>
+    <button id="start-btn" onclick="startGame()">START RUNAWAY</button>
+  </div>
+
+  <!-- Mobile Touch Controls -->
+  <div id="touch-controls">
+    <div class="dpad">
+      <button class="t-btn dpad-btn" id="btn-up">▲</button>
+      <div class="dpad-mid">
+        <button class="t-btn dpad-btn" id="btn-left">◀</button>
+        <button class="t-btn dpad-btn" id="btn-right">▶</button>
+      </div>
+      <button class="t-btn dpad-btn" id="btn-down">▼</button>
+    </div>
+    <div class="action-buttons">
+      <button class="t-btn act-btn" id="btn-interact">🖐️ HIDE/USE</button>
+      <button class="t-btn act-btn noise-btn" id="btn-noise">🔔 NOISE</button>
+    </div>
+  </div>
+</div>
